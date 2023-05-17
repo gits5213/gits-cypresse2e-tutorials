@@ -1,0 +1,11 @@
+[ {
+  "uid" : "6cd57ae2d1e9546b",
+  "name" : "validate, ab testing is clickable",
+  "time" : {
+    "start" : 1684330798971,
+    "stop" : 1684330800169,
+    "duration" : 1198
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
