@@ -2,14 +2,31 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "validate, ab testing is clickable",
-    "uid" : "6cd57ae2d1e9546b",
+    "name" : "fetch list of users",
+    "uid" : "118da08dd975ba3",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1684330798971,
-      "stop" : 1684330800169,
-      "duration" : 1198
+      "start" : 1684413184103,
+      "stop" : 1684413184361,
+      "duration" : 258
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "validate, link contains AB Testing",
+    "uid" : "66120e73f25c77ec",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1684413186419,
+      "stop" : 1684413187405,
+      "duration" : 986
     },
     "flaky" : false,
     "newFailed" : false,

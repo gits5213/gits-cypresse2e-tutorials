@@ -1,12 +1,12 @@
 {
-  "uid" : "6cd57ae2d1e9546b",
-  "name" : "validate, ab testing is clickable",
-  "fullName" : "validate, ab testing is clickable",
-  "historyId" : "a1d02783fdc033c007e29940cab72aed",
+  "uid" : "66120e73f25c77ec",
+  "name" : "validate, link contains AB Testing",
+  "fullName" : "validate, link contains AB Testing",
+  "historyId" : "04d321975f3806fffeda66e4822bed57",
   "time" : {
-    "start" : 1684330798971,
-    "stop" : 1684330800169,
-    "duration" : 1198
+    "start" : 1684413186419,
+    "stop" : 1684413187405,
+    "duration" : 986
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,17 +21,17 @@
     "steps" : [ {
       "name" : "\"before each\" hook",
       "time" : {
-        "start" : 1684330798974,
-        "stop" : 1684330799752,
-        "duration" : 778
+        "start" : 1684413186423,
+        "stop" : 1684413187333,
+        "duration" : 910
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "visit https://the-internet.herokuapp.com",
         "time" : {
-          "start" : 1684330799080,
-          "stop" : 1684330799750,
-          "duration" : 670
+          "start" : 1684413186506,
+          "stop" : 1684413187331,
+          "duration" : 825
         },
         "status" : "passed",
         "steps" : [ ],
@@ -44,8 +44,8 @@
       }, {
         "name" : "https://the-internet.herokuapp.com request",
         "time" : {
-          "start" : 1684330799750,
-          "stop" : 1684330799750,
+          "start" : 1684413187331,
+          "stop" : 1684413187331,
           "duration" : 0
         },
         "status" : "failed",
@@ -66,9 +66,9 @@
     }, {
       "name" : "get li:nth-of-type(1) > a",
       "time" : {
-        "start" : 1684330799756,
-        "stop" : 1684330799784,
-        "duration" : 28
+        "start" : 1684413187336,
+        "stop" : 1684413187354,
+        "duration" : 18
       },
       "status" : "passed",
       "steps" : [ ],
@@ -79,11 +79,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "click",
+      "name" : "contains A/B Testing",
       "time" : {
-        "start" : 1684330799784,
-        "stop" : 1684330799970,
-        "duration" : 186
+        "start" : 1684413187354,
+        "stop" : 1684413187363,
+        "duration" : 9
       },
       "status" : "passed",
       "steps" : [ ],
@@ -94,28 +94,85 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "page load --waiting for new page to load--",
+      "name" : "get li:nth-of-type(1) > a",
       "time" : {
-        "start" : 1684330799969,
-        "stop" : 1684330799969,
+        "start" : 1684413187363,
+        "stop" : 1684413187380,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **<a>** to have attribute **href** with the value **/abtest**",
+      "time" : {
+        "start" : 1684413187380,
+        "stop" : 1684413187380,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "/abtest"
+      }, {
+        "name" : "expected",
+        "value" : "/abtest"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "get li:nth-of-type(1) > a",
+      "time" : {
+        "start" : 1684413187380,
+        "stop" : 1684413187404,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "request",
+      "name" : "assert expected **/abtest** to equal **/abtest**",
       "time" : {
-        "start" : 1684330799970,
-        "stop" : 1684330799970,
+        "start" : 1684413187404,
+        "stop" : 1684413187404,
         "duration" : 0
       },
-      "status" : "failed",
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "/abtest"
+      }, {
+        "name" : "expected",
+        "value" : "/abtest"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **<a>** to have attribute **href**",
+      "time" : {
+        "start" : 1684413187404,
+        "stop" : 1684413187404,
+        "duration" : 0
+      },
+      "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
@@ -126,7 +183,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 7,
+    "stepsCount" : 10,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -134,10 +191,10 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "package",
-    "value" : "cypress.e2e.todo.cy.js"
+    "value" : "cypress.e2e.linksAssertionOnHomePage.cy.js"
   }, {
     "name" : "suite",
-    "value" : "Application validation"
+    "value" : "Links assertion on the home page"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -152,6 +209,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "6cd57ae2d1e9546b.json",
+  "source" : "66120e73f25c77ec.json",
   "parameterValues" : [ ]
 }
