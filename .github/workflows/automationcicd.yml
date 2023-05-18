@@ -1,7 +1,5 @@
-name: cypress-automation-cicd-test-result-deopy-to-github-page
-
+name: ci-cd-push
 on: [ push ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,7 +15,7 @@ jobs:
     - run: npm test
 
     - name: Get Allure history
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       if: always()
       continue-on-error: true
       with:
@@ -36,9 +34,9 @@ jobs:
 
     - name: Deploy report to Github Pages
       if: always()
-      uses: peaceiris/actions-gh-pages@v2
+      uses: peaceiris/actions-gh-pages@v3
       with:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: allure-history
-    
+  
