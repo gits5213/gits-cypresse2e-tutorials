@@ -35,3 +35,5 @@
 ```
 
 - > npm run report
+
+## Report added
