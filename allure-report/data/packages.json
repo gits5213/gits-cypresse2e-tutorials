@@ -7,19 +7,19 @@
       "name" : "getListOfUser.cy.js",
       "children" : [ {
         "name" : "fetch list of users",
-        "uid" : "118da08dd975ba3",
+        "uid" : "d57d307ba12a5128",
         "parentUid" : "2f4a31698e77e045aa6859e2ab93130f",
         "status" : "passed",
         "time" : {
-          "start" : 1684413184103,
-          "stop" : 1684413184361,
-          "duration" : 258
+          "start" : 1684414495774,
+          "stop" : 1684414496169,
+          "duration" : 395
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
         "newBroken" : false,
-        "retriesCount" : 0,
+        "retriesCount" : 1,
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
@@ -28,19 +28,19 @@
       "name" : "linksAssertionOnHomePage.cy.js",
       "children" : [ {
         "name" : "validate, link contains AB Testing",
-        "uid" : "66120e73f25c77ec",
+        "uid" : "33d141ffd943f4a8",
         "parentUid" : "d12f1f2ed0dd57678fdff586302766a7",
         "status" : "passed",
         "time" : {
-          "start" : 1684413186419,
-          "stop" : 1684413187405,
-          "duration" : 986
+          "start" : 1684414498400,
+          "stop" : 1684414499115,
+          "duration" : 715
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
         "newBroken" : false,
-        "retriesCount" : 0,
+        "retriesCount" : 1,
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],

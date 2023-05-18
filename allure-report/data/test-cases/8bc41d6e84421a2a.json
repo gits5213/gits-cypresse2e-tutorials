@@ -1,5 +1,5 @@
 {
-  "uid" : "118da08dd975ba3",
+  "uid" : "8bc41d6e84421a2a",
   "name" : "fetch list of users",
   "fullName" : "fetch list of users",
   "historyId" : "7b8838cc243644ec1366c05746206950",
@@ -120,14 +120,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "118da08dd975ba3.json",
+  "source" : "8bc41d6e84421a2a.json",
   "parameterValues" : [ ]
 }

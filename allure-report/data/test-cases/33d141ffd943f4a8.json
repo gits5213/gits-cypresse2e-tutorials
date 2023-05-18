@@ -1,19 +1,19 @@
 {
-  "uid" : "66120e73f25c77ec",
+  "uid" : "33d141ffd943f4a8",
   "name" : "validate, link contains AB Testing",
   "fullName" : "validate, link contains AB Testing",
   "historyId" : "04d321975f3806fffeda66e4822bed57",
   "time" : {
-    "start" : 1684413186419,
-    "stop" : 1684413187405,
-    "duration" : 986
+    "start" : 1684414498400,
+    "stop" : 1684414499115,
+    "duration" : 715
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "newBroken" : false,
   "newPassed" : false,
-  "retriesCount" : 0,
+  "retriesCount" : 1,
   "retriesStatusChange" : false,
   "beforeStages" : [ ],
   "testStage" : {
@@ -21,17 +21,17 @@
     "steps" : [ {
       "name" : "\"before each\" hook",
       "time" : {
-        "start" : 1684413186423,
-        "stop" : 1684413187333,
-        "duration" : 910
+        "start" : 1684414498404,
+        "stop" : 1684414499034,
+        "duration" : 630
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "visit https://the-internet.herokuapp.com",
         "time" : {
-          "start" : 1684413186506,
-          "stop" : 1684413187331,
-          "duration" : 825
+          "start" : 1684414498480,
+          "stop" : 1684414499033,
+          "duration" : 553
         },
         "status" : "passed",
         "steps" : [ ],
@@ -44,9 +44,9 @@
       }, {
         "name" : "https://the-internet.herokuapp.com request",
         "time" : {
-          "start" : 1684413187331,
-          "stop" : 1684413187331,
-          "duration" : 0
+          "start" : 1684414499032,
+          "stop" : 1684414499033,
+          "duration" : 1
         },
         "status" : "failed",
         "steps" : [ ],
@@ -66,9 +66,9 @@
     }, {
       "name" : "get li:nth-of-type(1) > a",
       "time" : {
-        "start" : 1684413187336,
-        "stop" : 1684413187354,
-        "duration" : 18
+        "start" : 1684414499036,
+        "stop" : 1684414499057,
+        "duration" : 21
       },
       "status" : "passed",
       "steps" : [ ],
@@ -81,9 +81,9 @@
     }, {
       "name" : "contains A/B Testing",
       "time" : {
-        "start" : 1684413187354,
-        "stop" : 1684413187363,
-        "duration" : 9
+        "start" : 1684414499057,
+        "stop" : 1684414499067,
+        "duration" : 10
       },
       "status" : "passed",
       "steps" : [ ],
@@ -96,9 +96,9 @@
     }, {
       "name" : "get li:nth-of-type(1) > a",
       "time" : {
-        "start" : 1684413187363,
-        "stop" : 1684413187380,
-        "duration" : 17
+        "start" : 1684414499067,
+        "stop" : 1684414499086,
+        "duration" : 19
       },
       "status" : "passed",
       "steps" : [ ],
@@ -111,8 +111,8 @@
     }, {
       "name" : "assert expected **<a>** to have attribute **href** with the value **/abtest**",
       "time" : {
-        "start" : 1684413187380,
-        "stop" : 1684413187380,
+        "start" : 1684414499086,
+        "stop" : 1684414499086,
         "duration" : 0
       },
       "status" : "passed",
@@ -132,9 +132,9 @@
     }, {
       "name" : "get li:nth-of-type(1) > a",
       "time" : {
-        "start" : 1684413187380,
-        "stop" : 1684413187404,
-        "duration" : 24
+        "start" : 1684414499086,
+        "stop" : 1684414499114,
+        "duration" : 28
       },
       "status" : "passed",
       "steps" : [ ],
@@ -147,9 +147,9 @@
     }, {
       "name" : "assert expected **/abtest** to equal **/abtest**",
       "time" : {
-        "start" : 1684413187404,
-        "stop" : 1684413187404,
-        "duration" : 0
+        "start" : 1684414499113,
+        "stop" : 1684414499114,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -168,8 +168,8 @@
     }, {
       "name" : "assert expected **<a>** to have attribute **href**",
       "time" : {
-        "start" : 1684413187404,
-        "stop" : 1684413187404,
+        "start" : 1684414499114,
+        "stop" : 1684414499114,
         "duration" : 0
       },
       "status" : "passed",
@@ -205,10 +205,18 @@
   "retry" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ ],
+    "retries" : [ {
+      "uid" : "5cedd75b021018e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1684413186419,
+        "stop" : 1684413187405,
+        "duration" : 986
+      }
+    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "66120e73f25c77ec.json",
+  "source" : "33d141ffd943f4a8.json",
   "parameterValues" : [ ]
 }
