@@ -1,230 +1,237 @@
-import homePageLocator from '../e2e/PageObject/homePage';
+import homePageLocator from '../PageObject/homePage';
+import homePageData from '../fixtures/userData/homePageData.json';
+import utils from '../utilities/utils';
 
 
 describe('Links assertion on the home page', () => {
   beforeEach(() => {
-    cy.visit('/')
+    utils.visit('/')
   })
+
 
   it('validate, link contains AB Testing', () => {
     //A/B Testing
-    cy.get(homePageLocator.getABTesting).contains('A/B Testing');
-    cy.get(homePageLocator.getABTesting).should('have.attr', 'href', '/abtest');
+    utils.verifyTextContains(homePageLocator.getABTesting, homePageData.abTesting);
+    utils.verifyLinkValues(homePageLocator.getABTesting, 'have.attr', 'href', homePageData.abtestUrl);
   });
+
   it('validate, link contains Add/Remove Elements', () => {
     //Add/Remove Elements
-    cy.get(homePageLocator.getAddRemoveElement).contains('Add/Remove Elements');
-    cy.get(homePageLocator.getAddRemoveElement).should('have.attr', 'href', '/add_remove_elements/');
+    utils.verifyTextContains(homePageLocator.getAddRemoveElement, homePageData.addRemoveElements);
+    utils.verifyLinkValues(homePageLocator.getAddRemoveElement, 'have.attr', 'href', homePageData.addRemoveElementsUrl);
   });
   it('validate, link contains Basic Auth (user and pass: admin)', () => {
     // Basic Auth (user and pass: admin)
-    cy.get(homePageLocator.getBasicAuth).contains('Basic Auth');
-    cy.get(homePageLocator.getBasicAuth).should('have.attr', 'href', '/basic_auth');
+    utils.verifyTextContains(homePageLocator.getBasicAuth, homePageData.basicAuth);
+    utils.verifyLinkValues(homePageLocator.getBasicAuth, 'have.attr', 'href', homePageData.basicAuthUrl);
   });
   it('validate, link contains Broken Images', () => {
     //Broken Images
-    cy.get(homePageLocator.getBrokenImage).contains('Broken Images');
-    cy.get(homePageLocator.getBrokenImage).should('have.attr', 'href', '/broken_images');
+    utils.verifyTextContains(homePageLocator.getBrokenImage, homePageData.brokenImages);
+    utils.verifyLinkValues(homePageLocator.getBrokenImage, 'have.attr', 'href', homePageData.brokenImagesUrl);
   });
   it('validate, link contains Challenging DOM', () => {
     //Challenging DOM
-    cy.get(homePageLocator.getChallenginDom).contains('Challenging DOM');
-    cy.get(homePageLocator.getChallenginDom).should('have.attr', 'href', '/challenging_dom');
+    utils.verifyTextContains(homePageLocator.getChallenginDom, homePageData.challengingDOM);
+    utils.verifyLinkValues(homePageLocator.getChallenginDom, 'have.attr', 'href', homePageData.challengingDomUrl);
   });
   it('validate, link contains Checkboxes', () => {
     //Checkboxes
-    cy.get(homePageLocator.getCheckbox).contains('Checkboxes');
-    cy.get(homePageLocator.getCheckbox).should('have.attr', 'href', '/checkboxes');
+    utils.verifyTextContains(homePageLocator.getCheckbox, homePageData.checkboxes);
+    utils.verifyLinkValues(homePageLocator.getCheckbox, 'have.attr', 'href', homePageData.checkboxesUrl);
   });
   it('validate, link contains Context Menu', () => {
     //Context Menu
-    cy.get(homePageLocator.getContextMenu).contains('Context Menu');
-    cy.get(homePageLocator.getContextMenu).should('have.attr', 'href', '/context_menu');
+    utils.verifyTextContains(homePageLocator.getContextMenu, homePageData.contextMenu);
+    utils.verifyLinkValues(homePageLocator.getContextMenu, 'have.attr', 'href', homePageData.contextMenuUrl);
   });
   it('validate, link contains Digest Authentication (user and pass: admin)', () => {
     //Digest Authentication (user and pass: admin)
-    cy.get(homePageLocator.getDigestAuth).contains('Digest Authentication');
-    cy.get(homePageLocator.getDigestAuth).should('have.attr', 'href', '/digest_auth');
+    utils.verifyTextContains(homePageLocator.getDigestAuth, homePageData.digestAuthentication);
+    utils.verifyLinkValues(homePageLocator.getDigestAuth, 'have.attr', 'href', homePageData.digestAuthUrl);
   });
   it('validate, link contains Disappearing Elements', () => {
     //Disappearing Elements
-    cy.get(homePageLocator.getDisappearingEEelements).contains('Disappearing Elements');
-    cy.get(homePageLocator.getDisappearingEEelements).should('have.attr', 'href', '/disappearing_elements');
+    utils.verifyTextContains(homePageLocator.getDisappearingEEelements, homePageData.disappearingElements);
+    utils.verifyLinkValues(homePageLocator.getDisappearingEEelements, 'have.attr', 'href', homePageData.disappearingElementsUrl);
   });
   it('validate, link contains Drag and Drop', () => {
     //Drag and Drop
-    cy.get(homePageLocator.getDragAndDrop).contains('Drag and Drop');
-    cy.get(homePageLocator.getDragAndDrop).should('have.attr', 'href', '/drag_and_drop');
+    utils.verifyTextContains(homePageLocator.getDragAndDrop, homePageData.dragAndDrop);
+    utils.verifyLinkValues(homePageLocator.getDragAndDrop, 'have.attr', 'href', homePageData.dragAndDropUrl);
   });
   it('validate, link contains Dropdown', () => {
     //Dropdown
-    cy.get(homePageLocator.getDropdown).contains('Dropdown');
-    cy.get(homePageLocator.getDropdown).should('have.attr', 'href', '/dropdown');
+    utils.verifyTextContains(homePageLocator.getDropdown, homePageData.dropdown);
+    utils.verifyLinkValues(homePageLocator.getDropdown, 'have.attr', 'href', homePageData.dropdownUrl);
   });
   it('validate, link contains Dynamic Content', () => {
     //Dynamic Content
-    cy.get(homePageLocator.getDynamicContent).contains('Dynamic Content');
-    cy.get(homePageLocator.getDynamicContent).should('have.attr', 'href', '/dynamic_content');
+    utils.verifyTextContains(homePageLocator.getDynamicContent, homePageData.dynamicContent);
+    utils.verifyLinkValues(homePageLocator.getDynamicContent, 'have.attr', 'href', homePageData.dynamicContentUrl);
   });
   it('validate, link contains Dynamic Controls', () => {
     //Dynamic Controls
-    cy.get(homePageLocator.getDynamicControls).contains('Dynamic Controls');
-    cy.get(homePageLocator.getDynamicControls).should('have.attr', 'href', '/dynamic_controls');
+    utils.verifyTextContains(homePageLocator.getDynamicControls, homePageData.dynamicControls);
+    utils.verifyLinkValues(homePageLocator.getDynamicControls, 'have.attr', 'href', homePageData.dynamicControlUrl);
   });
   it('validate, link contains Dynamic Loading', () => {
     //Dynamic Loading
-    cy.get(homePageLocator.getDynamicLoading).contains('Dynamic Loading');
-    cy.get(homePageLocator.getDynamicLoading).should('have.attr', 'href', '/dynamic_loading');
+    utils.verifyTextContains(homePageLocator.getDynamicLoading, homePageData.dynamicLoading);
+    utils.verifyLinkValues(homePageLocator.getDynamicLoading, 'have.attr', 'href', homePageData.dynamicLoadingUrl);
 
   });
   it('validate, link contains Entry Ad', () => {
     //Entry Ad
-    cy.get(homePageLocator.getEntryAd).contains('Entry Ad');
-    cy.get(homePageLocator.getEntryAd).should('have.attr', 'href', '/entry_ad');
+    utils.verifyTextContains(homePageLocator.getEntryAd, homePageData.entryAd);
+    utils.verifyLinkValues(homePageLocator.getEntryAd, 'have.attr', 'href', homePageData.entryAdUrlUrl);
   });
   it('validate, link contains Exit Intent', () => {
     //Exit Intent
-    cy.get(homePageLocator.getExitIntent).contains('Exit Intent');
-    cy.get(homePageLocator.getExitIntent).should('have.attr', 'href', '/exit_intent');
+    utils.verifyTextContains(homePageLocator.getExitIntent, homePageData.exitIntent);
+    utils.verifyLinkValues(homePageLocator.getExitIntent, 'have.attr', 'href', homePageData.exitIntentUrl);
   });
   it('validate, link contains File Download', () => {
     //File Download
-    cy.get(homePageLocator.getFileDownload).contains('File Download');
-    cy.get(homePageLocator.getFileDownload).should('have.attr', 'href', '/download');
+    utils.verifyTextContains(homePageLocator.getFileDownload, homePageData.fileDownload);
+    utils.verifyLinkValues(homePageLocator.getFileDownload, 'have.attr', 'href', homePageData.downloadUrl);
   });
   it('validate, link contains File Upload', () => {
     //File Upload
-    cy.get(homePageLocator.getFileUpload).contains('File Upload');
-    cy.get(homePageLocator.getFileUpload).should('have.attr', 'href', '/upload');
+    utils.verifyTextContains(homePageLocator.getFileUpload, homePageData.fileUpload);
+    utils.verifyLinkValues(homePageLocator.getFileUpload, 'have.attr', 'href', homePageData.uploadUrl);
   });
   it('validate, link contains Floating Menu', () => {
     //Floating Menu
-    cy.get(homePageLocator.getFloatingMenu).contains('Floating Menu');
-    cy.get(homePageLocator.getFloatingMenu).should('have.attr', 'href', '/floating_menu');
+    utils.verifyTextContains(homePageLocator.getFloatingMenu, homePageData.floatingMenu);
+    utils.verifyLinkValues(homePageLocator.getFloatingMenu, 'have.attr', 'href', homePageData.floatingMenuUrl);
   });
   it('validate, link contains Forgot Password', () => {
    //Forgot Password
-    cy.get(homePageLocator.getForgotPassword).contains('Forgot Password');
-    cy.get(homePageLocator.getForgotPassword).should('have.attr', 'href', '/forgot_password');
+   utils.verifyTextContains(homePageLocator.getForgotPassword, homePageData.forgotPassword);
+    utils.verifyLinkValues(homePageLocator.getForgotPassword, 'have.attr', 'href', homePageData.forgotPasswordUrl);
   });
   it('validate, link contains Form Authentication', () => {
      //Form Authentication
-    cy.get(homePageLocator.getFormAuth).contains('Form Authentication');
-    cy.get(homePageLocator.getFormAuth).should('have.attr', 'href', '/login');
+     utils.verifyTextContains(homePageLocator.getFormAuth, homePageData.formAuthentication);
+    utils.verifyLinkValues(homePageLocator.getFormAuth, 'have.attr', 'href', homePageData.loginUrl);
   });
   it('validate, link contains Frames', () => {
    //Frames
-    cy.get(homePageLocator.getFrames).contains('Frames');
-    cy.get(homePageLocator.getFrames).should('have.attr', 'href', '/frames');
+   utils.verifyTextContains(homePageLocator.getFrames, homePageData.frames);
+    utils.verifyLinkValues(homePageLocator.getFrames, 'have.attr', 'href', homePageData.framesUrl);
   });
   it('validate, link contains Geolocation', () => {
     //Geolocation
-    cy.get(homePageLocator.getGeolocation).contains('Geolocation');
-    cy.get(homePageLocator.getGeolocation).should('have.attr', 'href', '/geolocation');
+    utils.verifyTextContains(homePageLocator.getGeolocation, homePageData.geolocation);
+    utils.verifyLinkValues(homePageLocator.getGeolocation, 'have.attr', 'href', homePageData.geolocationUrl);
   });
   it('validate, link contains Horizontal Slider', () => {
      //Horizontal Slider
-    cy.get(homePageLocator.getHorizontalSlider).contains('Horizontal Slider');
-    cy.get(homePageLocator.getHorizontalSlider).should('have.attr', 'href', '/horizontal_slider');
+     utils.verifyTextContains(homePageLocator.getHorizontalSlider, homePageData.horizontalSlider);
+    utils.verifyLinkValues(homePageLocator.getHorizontalSlider, 'have.attr', 'href', homePageData.horizontalSliderUrl);
   });
   it('validate, link contains Hovers', () => {
    //Hovers
-    cy.get(homePageLocator.getHovers).contains('Hovers');
-    cy.get(homePageLocator.getHovers).should('have.attr', 'href', '/hovers');
+   utils.verifyTextContains(homePageLocator.getHovers, homePageData.hovers);
+    utils.verifyLinkValues(homePageLocator.getHovers, 'have.attr', 'href', homePageData.hoversUrl);
   });
   it('validate, link contains Infinite Scroll', () => {
     //Infinite Scroll
-    cy.get(homePageLocator.getInfiniteScroll).contains('Infinite Scroll');
-    cy.get(homePageLocator.getInfiniteScroll).should('have.attr', 'href', '/infinite_scroll');
+    utils.verifyTextContains(homePageLocator.getInfiniteScroll, homePageData.infiniteScroll);
+    utils.verifyLinkValues(homePageLocator.getInfiniteScroll, 'have.attr', 'href', homePageData.infiniteScrollUrl);
   });
   it('validate, link contains Inputs', () => {
     //Inputs
-    cy.get(homePageLocator.getInputs).contains('Inputs');
-    cy.get(homePageLocator.getInputs).should('have.attr', 'href', '/inputs');
+    utils.verifyTextContains(homePageLocator.getInputs, homePageData.inputs);
+    utils.verifyLinkValues(homePageLocator.getInputs, 'have.attr', 'href', homePageData.inputsUrl);
   });
   it('validate, link contains JQuery UI Menus', () => {
     //JQuery UI Menus
-    cy.get(homePageLocator.getJQueryUIMenus).contains('JQuery UI Menus');
-    cy.get(homePageLocator.getJQueryUIMenus).should('have.attr', 'href', '/jqueryui/menu');
+    utils.verifyTextContains(homePageLocator.getJQueryUIMenus, homePageData.jQueryUIMenu);
+    utils.verifyLinkValues(homePageLocator.getJQueryUIMenus, 'have.attr', 'href', homePageData.jqueryuiMenuUrl);
   });
   it('validate, link contains JavaScript Alerts', () => {
     //JavaScript Alerts
-    cy.get(homePageLocator.getJavaScriptAlerts).contains('JavaScript Alerts');
-    cy.get(homePageLocator.getJavaScriptAlerts).should('have.attr', 'href', '/javascript_alerts');
+    utils.verifyTextContains(homePageLocator.getJavaScriptAlerts, homePageData.javaScriptAlerts);
+    utils.verifyLinkValues(homePageLocator.getJavaScriptAlerts, 'have.attr', 'href', homePageData.javascriptAlertsUrl);
   });
   it('validate, link contains JavaScript onload event error', () => {
     //JavaScript onload event error
-    cy.get(homePageLocator.getJavaScriptOnloadEventError).contains('JavaScript onload event error');
-    cy.get(homePageLocator.getJavaScriptOnloadEventError).should('have.attr', 'href', '/javascript_error');
+    utils.verifyTextContains(homePageLocator.getJavaScriptOnloadEventError, homePageData.javaScriptOnloadEventError);
+    utils.verifyLinkValues(homePageLocator.getJavaScriptOnloadEventError, 'have.attr', 'href', homePageData.javascriptErrorUrl);
   });
   it('validate, link contains Key Presses', () => {
     //Key Presses
-    cy.get(homePageLocator.getKeeyPresses).contains('Key Presses');
-    cy.get(homePageLocator.getKeeyPresses).should('have.attr', 'href', '/key_presses');
+    utils.verifyTextContains(homePageLocator.getKeeyPresses, homePageData.keyPresses);
+    utils.verifyLinkValues(homePageLocator.getKeeyPresses, 'have.attr', 'href', homePageData.keyPressesUrl);
   });
   it('validate, link contains Large & Deep DOM', () => {
      //Large & Deep DOM
-    cy.get(homePageLocator.getLergeAndDeepDom).contains('Large & Deep DOM');
-    cy.get(homePageLocator.getLergeAndDeepDom).should('have.attr', 'href', '/large');
+    utils.verifyTextContains(homePageLocator.getLergeAndDeepDom, homePageData.largeAandDeepDOM);
+    utils.verifyLinkValues(homePageLocator.getLergeAndDeepDom, 'have.attr', 'href', homePageData.largeUrl);
   });
   it('validate, link containsMultiple Windows', () => {
    //Multiple Windows
-    cy.get(homePageLocator.getmultipleWindow).contains('Multiple Windows');
-    cy.get(homePageLocator.getmultipleWindow).should('have.attr', 'href', '/windows');
+    utils.verifyTextContains(homePageLocator.getmultipleWindow, homePageData.multipleWindows);
+    utils.verifyLinkValues(homePageLocator.getmultipleWindow, 'have.attr', 'href', homePageData.windowsUrl);
   });
   it(`validate, link contains Nested Frames`, () => {
     //Nested Frames
-    cy.get(homePageLocator.getNestedFrames).contains('Nested Frames');
-    cy.get(homePageLocator.getNestedFrames).should('have.attr', 'href', '/nested_frames');
+    utils.verifyTextContains(homePageLocator.getNestedFrames, homePageData.nestedFrames);
+    utils.verifyLinkValues(homePageLocator.getNestedFrames, 'have.attr', 'href', homePageData.nestedFramesUrl);
   });
   it('validate, link contains Notification Messages', () => {
     //Notification Messages
-    cy.get(homePageLocator.getNotificationMessages).contains('Notification Messages');
-    cy.get(homePageLocator.getNotificationMessages).should('have.attr', 'href', '/notification_message');
+    utils.verifyTextContains(homePageLocator.getNotificationMessages, homePageData.notificationMessages);
+    utils.verifyLinkValues(homePageLocator.getNotificationMessages, 'have.attr', 'href', homePageData.notificationMessageUrl);
   });
   it('validate, link contains Redirect Link', () => {
     //Redirect Link
-    cy.get(homePageLocator.getRedirectLink).contains('Redirect Link');
-    cy.get(homePageLocator.getRedirectLink).should('have.attr', 'href', '/redirector');
+    utils.verifyTextContains(homePageLocator.getRedirectLink, homePageData.redirectLink);
+    utils.verifyLinkValues(homePageLocator.getRedirectLink, 'have.attr', 'href', homePageData.redirectorUrl);
   });
   it('validate, link contains Secure File Download', () => {
     //Secure File Download
-    cy.get(homePageLocator.getSecureFileDownload).contains('Secure File Download');
-    cy.get(homePageLocator.getSecureFileDownload).should('have.attr', 'href', '/download_secure');
+    utils.verifyTextContains(homePageLocator.getSecureFileDownload, homePageData.SecureFileDownload);
+    utils.verifyLinkValues(homePageLocator.getSecureFileDownload, 'have.attr', 'href', homePageData.downloadSecureUrl);
   });
   it('validate, link contains Shadow DOM', () => {
     //Shadow DOM
-    cy.get(homePageLocator.getShadowDom).contains('Shadow DOM');
-    cy.get(homePageLocator.getShadowDom).should('have.attr', 'href', '/shadowdom');
+    utils.verifyTextContains(homePageLocator.getShadowDom, homePageData.shadowDOM);
+    utils.verifyLinkValues(homePageLocator.getShadowDom, 'have.attr', 'href', homePageData.shadowdomUrl);
   });
   it('validate, link contains Shifting Content', () => {
     //Shifting Content
-    cy.get(homePageLocator.getShiftingContent).contains('Shifting Content');
-    cy.get(homePageLocator.getShiftingContent).should('have.attr', 'href', '/shifting_content');
+    utils.verifyTextContains(homePageLocator.getShiftingContent, homePageData.shiftingContent);
+    utils.verifyLinkValues(homePageLocator.getShiftingContent, 'have.attr', 'href', homePageData.shiftingContentUrl);
   });
   it('validate, link contains Slow Resources', () => {
     //Slow Resources
-    cy.get(homePageLocator.getSlowResources).contains('Slow Resources');
-    cy.get(homePageLocator.getSlowResources).should('have.attr', 'href', '/slow');
+    utils.verifyTextContains(homePageLocator.getSlowResources, homePageData.slowResources);
+    utils.verifyLinkValues(homePageLocator.getSlowResources, 'have.attr', 'href', homePageData.slowUrl);
   });
   it('validate, link contains Sortable Data Tables', () => {
     //Sortable Data Tables
-    cy.get(homePageLocator.getSortableDataTables).contains('Sortable Data Tables');
-    cy.get(homePageLocator.getSortableDataTables).should('have.attr', 'href', '/tables');
+    utils.verifyTextContains(homePageLocator.getSortableDataTables, homePageData.sortableDataTables);
+    utils.verifyLinkValues(homePageLocator.getSortableDataTables, 'have.attr', 'href', homePageData.tablesUrl);
   });
   it('validate, link contains Status Codes', () => {
     //Status Codes
-    cy.get(homePageLocator.getStatusCodes).contains('Status Codes');
-    cy.get(homePageLocator.getStatusCodes).should('have.attr', 'href', '/status_codes');
+    utils.verifyTextContains(homePageLocator.getStatusCodes, homePageData.statusCodes);
+    utils.verifyLinkValues(homePageLocator.getStatusCodes, 'have.attr', 'href', homePageData.statusCodesUrl);
   });
   it('validate, link contains Typos', () => {
     //Typos
-    cy.get(homePageLocator.getTypos).contains('Typos');
-    cy.get(homePageLocator.getTypos).should('have.attr', 'href', '/typos');
+    utils.verifyTextContains(homePageLocator.getTypos, homePageData.typos);
+    utils.verifyLinkValues(homePageLocator.getTypos, 'have.attr', 'href', homePageData.typosUrl);
   });
   it('validate, link contains WYSIWYG Editor', () => {
     //WYSIWYG Editor
-    cy.get(homePageLocator.getWysiwygEditor).contains('WYSIWYG Editor');
-    cy.get(homePageLocator.getWysiwygEditor).should('have.attr', 'href', '/tinymce');
+    utils.verifyTextContains(homePageLocator.getWysiwygEditor, homePageData.wysiwygEditor);
+    utils.verifyLinkValues(homePageLocator.getWysiwygEditor, 'have.attr', 'href', homePageData.tinymceUrl);
   })
+  
+
+
 })
