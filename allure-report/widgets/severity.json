@@ -1,0 +1,451 @@
+[ {
+  "uid" : "9c5cd64d811ca69e",
+  "name" : "validate, link contains Notification Messages Editor",
+  "time" : {
+    "start" : 1685041263232,
+    "stop" : 1685041263534,
+    "duration" : 302
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a321c6e03d7fa1c",
+  "name" : "validate, link contains Key Presses Editor",
+  "time" : {
+    "start" : 1685041261962,
+    "stop" : 1685041262298,
+    "duration" : 336
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de400f7f7d99bcaf",
+  "name" : "fetch list of users",
+  "time" : {
+    "start" : 1685041248839,
+    "stop" : 1685041249004,
+    "duration" : 165
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4007e47766a41d2",
+  "name" : "validate, link contains JavaScript onload event error Editor",
+  "time" : {
+    "start" : 1685041261632,
+    "stop" : 1685041261941,
+    "duration" : 309
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8fb7e97ac24b37b9",
+  "name" : "validate, link contains JavaScript Alerts Editor",
+  "time" : {
+    "start" : 1685041261322,
+    "stop" : 1685041261623,
+    "duration" : 301
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3be625a1fa085bd4",
+  "name" : "validate, link contains JQuery UI Menus Editor",
+  "time" : {
+    "start" : 1685041260970,
+    "stop" : 1685041261310,
+    "duration" : 340
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc8aec05a24216ea",
+  "name" : "validate, link contains Dropdown Editor",
+  "time" : {
+    "start" : 1685041255128,
+    "stop" : 1685041255392,
+    "duration" : 264
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f53cc103ee2e7d47",
+  "name" : "validate, link contains Large & Deep DOM Editor",
+  "time" : {
+    "start" : 1685041262307,
+    "stop" : 1685041262608,
+    "duration" : 301
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "79f5eaf9c830a5b5",
+  "name" : "validate, link contains Slow Resources Editor",
+  "time" : {
+    "start" : 1685041264817,
+    "stop" : 1685041265388,
+    "duration" : 571
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eab746300f820ac1",
+  "name" : "validate, link contains Checkboxes Editor",
+  "time" : {
+    "start" : 1685041253487,
+    "stop" : 1685041253814,
+    "duration" : 327
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a412d778a46d51c",
+  "name" : "validate, link contains Nested Frames Editor",
+  "time" : {
+    "start" : 1685041262937,
+    "stop" : 1685041263223,
+    "duration" : 286
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9dbd8941f9918afb",
+  "name" : "validate, link contains Dynamic Content Editor",
+  "time" : {
+    "start" : 1685041255399,
+    "stop" : 1685041255675,
+    "duration" : 276
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "480c60e54437282e",
+  "name" : "validate, link contains Shadow DOM Editor",
+  "time" : {
+    "start" : 1685041264162,
+    "stop" : 1685041264482,
+    "duration" : 320
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c4422745ec6bd16",
+  "name" : "validate, link contains Forgot Password Editor",
+  "time" : {
+    "start" : 1685041258568,
+    "stop" : 1685041258910,
+    "duration" : 342
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87220ed87967a174",
+  "name" : "validate, link contains Shifting Content Editor",
+  "time" : {
+    "start" : 1685041264496,
+    "stop" : 1685041264807,
+    "duration" : 311
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e38eb70643d67c2c",
+  "name" : "validate, link contains Frames Editor",
+  "time" : {
+    "start" : 1685041259196,
+    "stop" : 1685041259488,
+    "duration" : 292
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d236e204b3be01be",
+  "name" : "validate, link contains Dynamic Controls Editor",
+  "time" : {
+    "start" : 1685041255683,
+    "stop" : 1685041256016,
+    "duration" : 333
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "214cbb2d909e67b6",
+  "name" : "validate, link contains Hovers Editor",
+  "time" : {
+    "start" : 1685041260085,
+    "stop" : 1685041260366,
+    "duration" : 281
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "116d4fa089591462",
+  "name" : "validate, link contains Secure File Download Editor",
+  "time" : {
+    "start" : 1685041263842,
+    "stop" : 1685041264150,
+    "duration" : 308
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d15fb27519c6a2b3",
+  "name" : "validate, link contains Status Codes Editor",
+  "time" : {
+    "start" : 1685041265719,
+    "stop" : 1685041266032,
+    "duration" : 313
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d84abbb42ec2e53d",
+  "name" : "validate, link contains Basic Auth Editor",
+  "time" : {
+    "start" : 1685041252539,
+    "stop" : 1685041252848,
+    "duration" : 309
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e77d1508674eadb8",
+  "name" : "validate, link contains Disappearing Elements Editor",
+  "time" : {
+    "start" : 1685041254456,
+    "stop" : 1685041254759,
+    "duration" : 303
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bba6bc4757d45c9",
+  "name" : "validate, link contains Infinite Scroll Editor",
+  "time" : {
+    "start" : 1685041260374,
+    "stop" : 1685041260659,
+    "duration" : 285
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b23ee809b7dd8311",
+  "name" : "validate, link contains Dynamic Loading Editor",
+  "time" : {
+    "start" : 1685041256023,
+    "stop" : 1685041256353,
+    "duration" : 330
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "716f83c3713019cc",
+  "name" : "validate, link contains Geolocation Editor",
+  "time" : {
+    "start" : 1685041259496,
+    "stop" : 1685041259792,
+    "duration" : 296
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d53bf8e2e0eeef2",
+  "name" : "validate, link contains Sortable Data Tables Editor",
+  "time" : {
+    "start" : 1685041265398,
+    "stop" : 1685041265708,
+    "duration" : 310
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13343cdd2cbeb169",
+  "name" : "validate, link contains Exit Intent Editor",
+  "time" : {
+    "start" : 1685041256649,
+    "stop" : 1685041257174,
+    "duration" : 525
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3543178e4167f63a",
+  "name" : "validate, link contains Broken Images Editor",
+  "time" : {
+    "start" : 1685041252853,
+    "stop" : 1685041253158,
+    "duration" : 305
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18595b215f66718e",
+  "name" : "validate, link contains Inputs Editor",
+  "time" : {
+    "start" : 1685041260668,
+    "stop" : 1685041260962,
+    "duration" : 294
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60fbbc318cd9b43f",
+  "name" : "validate, link contains Drag and Drop Editor",
+  "time" : {
+    "start" : 1685041254767,
+    "stop" : 1685041255122,
+    "duration" : 355
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b8e1370b5c762ab",
+  "name" : "validate, link contains Floating Menu Editor",
+  "time" : {
+    "start" : 1685041258185,
+    "stop" : 1685041258544,
+    "duration" : 359
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b354db6e87649e6",
+  "name" : "validate, link contains Digest Authentication Editor",
+  "time" : {
+    "start" : 1685041254138,
+    "stop" : 1685041254449,
+    "duration" : 311
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4b5c51f01002a94",
+  "name" : "validate, link contains Challenging DOM Editor",
+  "time" : {
+    "start" : 1685041253165,
+    "stop" : 1685041253481,
+    "duration" : 316
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "55c8b7d06f66fb82",
+  "name" : "validate, link contains Redirect Link Editor",
+  "time" : {
+    "start" : 1685041263544,
+    "stop" : 1685041263832,
+    "duration" : 288
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2dd3a34e4e5f4292",
+  "name" : "validate, link contains A/B Testing Editor",
+  "time" : {
+    "start" : 1685041250793,
+    "stop" : 1685041252195,
+    "duration" : 1402
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2416b43cd6732130",
+  "name" : "validate, link contains Add/Remove Elements Editor",
+  "time" : {
+    "start" : 1685041252208,
+    "stop" : 1685041252530,
+    "duration" : 322
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8fa71d956a35c50b",
+  "name" : "validate, link contains Typos Editor",
+  "time" : {
+    "start" : 1685041266043,
+    "stop" : 1685041266346,
+    "duration" : 303
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "876d6436807bea51",
+  "name" : "validate, link contains Form Authentication Editor",
+  "time" : {
+    "start" : 1685041258917,
+    "stop" : 1685041259189,
+    "duration" : 272
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d5c8a2752688d11",
+  "name" : "validate, link contains Multiple Windows Editor",
+  "time" : {
+    "start" : 1685041262617,
+    "stop" : 1685041262928,
+    "duration" : 311
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9866a8b72fc364c3",
+  "name" : "validate, link contains WYSIWYG Editor Editor",
+  "time" : {
+    "start" : 1685041266357,
+    "stop" : 1685041266677,
+    "duration" : 320
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "275521af8008af42",
+  "name" : "validate, link contains Horizontal Slider Editor",
+  "time" : {
+    "start" : 1685041259800,
+    "stop" : 1685041260076,
+    "duration" : 276
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9716d26e116934c8",
+  "name" : "validate, link contains File Upload Editor",
+  "time" : {
+    "start" : 1685041257758,
+    "stop" : 1685041258177,
+    "duration" : 419
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b1450300792ce42d",
+  "name" : "validate, link contains File Download Editor",
+  "time" : {
+    "start" : 1685041257275,
+    "stop" : 1685041257743,
+    "duration" : 468
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3184b9c53c661a90",
+  "name" : "validate, link contains Entry Ad Editor",
+  "time" : {
+    "start" : 1685041256360,
+    "stop" : 1685041256642,
+    "duration" : 282
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d894e4d4f5f187fa",
+  "name" : "validate, link contains Context Menu Editor",
+  "time" : {
+    "start" : 1685041253820,
+    "stop" : 1685041254128,
+    "duration" : 308
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
