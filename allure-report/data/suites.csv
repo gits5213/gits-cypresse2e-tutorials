@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu May 18 08:54:58 EDT 2023","Thu May 18 08:54:59 EDT 2023","715","","Links assertion on the home page","","","","validate, link contains AB Testing",""
-"passed","Thu May 18 08:54:55 EDT 2023","Thu May 18 08:54:56 EDT 2023","395","","API end point assertions","","","","fetch list of users",""
