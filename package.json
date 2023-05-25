@@ -4,6 +4,7 @@
   "description": "automation test suite",
   "main": "index.js",
   "scripts": {
+    "pretest":"rm -rf allure-report, allure-results",
     "cy:open": "npx cypress open --e2e --browser chrome",
     "test": "cypress run --e2e --env allure=true",
     "test:local": "cypress_baseUrl=https://localhost-3001-the-internet.herokuapp.com run --e2e --env allure=true",
