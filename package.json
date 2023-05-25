@@ -6,6 +6,9 @@
   "scripts": {
     "cy:open": "npx cypress open --e2e --browser chrome",
     "test": "cypress run --e2e --env allure=true",
+    "test:local": "cypress_baseUrl=https://localhost-3001-the-internet.herokuapp.com run --e2e --env allure=true",
+    "test:dev": "cypress_baseUrl=https://dev-the-internet.herokuapp.com  run --e2e --env allure=true",
+    "test:qa": "cypress_baseUrl=https://qa-the-internet.herokuapp.com  run --e2e --env allure=true",
     "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "author": "MD Zaman - GITS",
