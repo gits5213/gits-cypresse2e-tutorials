@@ -36,4 +36,15 @@
 
 - > npm run report
 
-## Report added
+## Generating test report throught the CI/CD and deploying to github page
+- Github account > Settings > Action > General > Scroll down > Workflow permission > Select Read and Write permission
+- Github account > Actions > Select NodeJS build and test > Commit throgh the PR > Merge it
+- Pull the latest code in local and start working on nodejs.js.yml file
+- End of the nodejs.js.yml file add github page script for creating github page and deploy allure test report on the github page for that 
+-  [Adding script end of the file](https://github.com/marketplace/actions/allure-report-with-history) 
+- Remove "build" from this line "allure_results: build/allure-results"
+- Push your code on the PR and merge it with master branch 
+- Build should be trigger and it should successful 
+- Github account > Settings > Pages > select gh-pages from the branch dropdown list and save it to the root
+- Local machine add something and push it again 
+- Validate, Build successful and test allure report deploy to the github page
