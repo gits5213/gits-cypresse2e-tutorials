@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"730710bfaf7bc19f7932f62e58d616de","name":"Links assertion on the home page","statistic":{"failed":0,"broken":0,"skipped":0,"passed":44,"unknown":0,"total":44}},{"uid":"f1e88620ce0aeede4df2569429d5b9e4","name":"API end point assertions","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
